@@ -1,5 +1,5 @@
 # rene.codes
-Welcome to my own simple personal portfolio project
+Welcome to my own simple personal portfolio project, visit it at [rene.codes](https://rene.codes)
 
 ![Screenshot](img/preview.png)
 
