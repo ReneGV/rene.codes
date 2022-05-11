@@ -1,0 +1,14 @@
+<footer class="web-page-footer">
+  <div class="social-media">
+    <% for (var socialItem in theme.footer_icons){ %>
+      <a class="social-media-item" href="href="<%= theme.footer_icons[socialItem].url%>">
+        <i class="<%=theme.footer_icons[socialItem].class%>"></i>
+      </a>    
+    <% } %>
+  </div>
+  <p>
+    <b>rene.codes</b> was built using <a href="https://hexo.io/"><b>Hexo</b></a> an awesome framework for creating your own blog using Markdown files.
+    <br/>
+    Made with love © 2019 - <%=(new Date()).getFullYear()%>
+  </p>
+</footer>

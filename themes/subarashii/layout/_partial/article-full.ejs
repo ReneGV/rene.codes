@@ -1,0 +1,30 @@
+<div class="container blogPost">
+    <div class="row">
+        <div class="col-sm-9 px-md-5">
+            <% if(item.top_image){ %>
+                <div class="post-top-image" 
+                    style="background-image: url(<%- config.root %><%-  item.path + item.top_image%> %>);">
+                </div>
+            <% } %>
+            <h2 class="blog-post-title">
+                <%- item.title || item.link%>
+            </h2>
+            <p class="meta">
+                <i class="far fa-clock"></i>
+                <%= item.date.format(config.date_format) %> <%- partial('categories', {item: item}) %>
+            </p>
+            <p class="meta">
+                <%- partial('tags', {item: item}) %>
+            </p>
+            <!-- Content -->
+            <%- item.content %>
+            <br />
+        </div>
+
+        <div class="col-sm-3">
+            <%- partial('sidebar', {item: item}) %>
+        </div>
+    </div>
+</div>
+<!-- Menu fade on scroll -->
+<%- js('/js/hide-header.js') %>

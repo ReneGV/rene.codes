@@ -1,0 +1,58 @@
+﻿# Menu
+# The object key is the label and the value is the path.
+menu:
+  Posts: /
+  'About me': /about-me
+
+# The icons at the bottom of the page.
+# The class value comes from font awesome.
+#  Example: if the html code for the icon is <i class="fas fa-home"></i> the value for class will be fas fa-home. 
+footer_icons:
+  'Github':
+    url: 'https://github.com/ReneGV'
+    class: 'fab fa-github'
+  'Linkedin':
+    url: 'https://www.linkedin.com/in/renegv/'
+    class: 'fab fa-linkedin'
+  'Twitter':
+    url: 'https://twitter.com/gv_rene'
+    class: 'fab fa-twitter'
+  'Instagram':
+    url: 'https://www.instagram.com/renegv94/'
+    class: 'fab fa-instagram'
+  'Telegram':
+    url: 'https://t.me/renegv'
+    class: 'fab fa-telegram-plane'
+  'Stack overflow':
+    url: 'https://stackoverflow.com/users/9069198/ren%c3%a9-gonz%c3%a1lez-venegas'
+    class: 'fab fa-stack-overflow'
+  'Dev':
+    url: 'https://dev.to/gv_rene'
+    class: 'fab fa-dev'
+
+# This is reserved for meta tags.
+# List of supported items:
+# 1. Twitter card image. See: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary.html
+# 2. Open graph image. See: http://ogp.me/
+meta: 
+  twitter:
+    featured_image: img/og_preview.png
+  open_graph: #Facebook
+    featured_image: img/og_preview.png
+
+# The sidebar is reserved for a twitter feed and blocks of text/html.
+sidebar:
+  twitter:
+    enabled: true
+    username: 'gv_rene'
+    height: 800
+  tldr: 
+    - block1: 
+      title: 'TL;DR'
+      content: 'Yet another hexo theme.'
+    - block2: 
+      title: 'TL;DR 2'
+      content: 'No, not another one :/'
+
+# If featured_image is missing from a post, this one will be used.
+featured_image: ./img/default.jpg

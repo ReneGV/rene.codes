@@ -1,0 +1,13 @@
+<header class = "web-page-header">
+  <div class="web-page-logo">
+      <img src="/img/codes_rounded.png" height="30px">
+      <a href="/">rene.codes</a>                     
+  </div>
+  <div class="navigation-menu-list">
+    <% for (let menuItem in theme.menu){ %>
+      <div class="navigation-menu-item">
+          <a href="<%- url_for(theme.menu[menuItem]) %>"> <%-menuItem%></a> 
+      </div>  
+    <% } %>  
+  </div>
+</header>
